@@ -1,0 +1,30 @@
+
+	<div class="item">
+		<!-- 日期分类 -->
+		<div class="mark" ng-show="loaded">{{date|date}}</div>
+		<ul class="posts">
+			<!-- 文章 -->
+			<li ng-repeat="post in posts">
+				<span href="javascript:;" ng-if="post.column.name" class="tag">{{post.column.name}}</span>
+				<div class="cont">
+					<h3>{{post.title}}</h3>
+					<div class="brief">
+						<!-- 10001和10002 -->
+						<p ng-class="{only: post.display_style == 10001}" ng-if="post.display_style != 10003">
+							{{post.abstract}}
+						</p>
+						<!-- 10003 -->
+						<div class="gallery" ng-if="post.display_style == 10003">
+							<div class="img-box" ng-repeat="thumbs in post.thumbs">
+								<img ng-src="{{thumbs.small.url}}" alt="">
+							</div>
+						</div>
+						<!-- 10002 -->
+						<div class="thumb" ng-if="post.display_style == 10002">
+							<img ng-src="{{post.thumbs[0].small.url}}" alt="">
+						</div>
+					</div>							
+				</div>
+			</li>
+		</ul>
+	</div>
