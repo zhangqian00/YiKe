@@ -27,6 +27,7 @@ Include conf/extra/httpd-vhosts.conf
     ServerName yike.com
     ServerAlias www.yike.com
 </VirtualHost>
+```
 ### 步骤三：配置hosts文件（C:\Windows\System32\drivers\etc\hosts)
 ```
 127.0.0.1       yike.com
