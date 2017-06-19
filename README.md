@@ -1,4 +1,5 @@
 ## 基于AngularJS模仿的"豆瓣一刻"APP
+##### 后台数据来自"豆瓣一刻"后台数据接口
 ### 首页
 ![image index](https://github.com/AlertZq/YiKe/blob/master/img-folder/index.jpg)
 ### 菜单栏
@@ -9,6 +10,7 @@
 ![image category](https://github.com/AlertZq/YiKe/blob/master/img-folder/category.jpg)
 ### 设置
 ![image setting](https://github.com/AlertZq/YiKe/blob/master/img-folder/setting.jpg)
+
 ## Apache环境搭建
 ```html
 DocumentRoot "e:/Yike/"
